@@ -18,7 +18,7 @@ app = Flask(__name__)
 viber = Api(BotConfiguration(
     name='PythonSampleBot',
     avatar='https://demotivation.ru/wp-content/uploads/2020/11/s1200-2-9.jpg',
-    auth_token='50134467aae7e642-993a953a9bfb00f0-46d5087d90cecab8'
+    auth_token='='
 ))
 
 def allras(textzabbix):
@@ -83,7 +83,7 @@ def incoming():
 
 if __name__ == "__main__":
     context = ('fullchain2.pem', 'custom.key')
-    app.run(host='bot.viber.test.icmm.ru',port=443, debug=True, ssl_context=context)
+    app.run(host='',port=443, debug=True, ssl_context=context)
 
     
 
